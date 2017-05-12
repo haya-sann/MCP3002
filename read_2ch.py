@@ -10,7 +10,7 @@ import subprocess
 spi = spidev.SpiDev()
 spi.open(0, 0)
 # Settings (for example)
-#spi.max_speed_hz = 10000
+spi.max_speed_hz = 10000 #通信速度を10kHzに下げる。
 
 try:
     while True:
